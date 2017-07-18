@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		ECD401AB1F1E60E300D3585D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD401AA1F1E60E300D3585D /* AppDelegate.swift */; };
-		ECD401AD1F1E60E300D3585D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD401AC1F1E60E300D3585D /* ViewController.swift */; };
 		ECD401B01F1E60E300D3585D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECD401AE1F1E60E300D3585D /* Main.storyboard */; };
 		ECD401B31F1E60E300D3585D /* StoryBook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ECD401B11F1E60E300D3585D /* StoryBook.xcdatamodeld */; };
 		ECD401B51F1E60E300D3585D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECD401B41F1E60E300D3585D /* Assets.xcassets */; };
@@ -37,7 +36,6 @@
 /* Begin PBXFileReference section */
 		ECD401A71F1E60E300D3585D /* StoryBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoryBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECD401AA1F1E60E300D3585D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ECD401AC1F1E60E300D3585D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ECD401AF1F1E60E300D3585D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ECD401B21F1E60E300D3585D /* StoryBook.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StoryBook.xcdatamodel; sourceTree = "<group>"; };
 		ECD401B41F1E60E300D3585D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -99,13 +97,11 @@
 		ECD401A91F1E60E300D3585D /* StoryBook */ = {
 			isa = PBXGroup;
 			children = (
-				ECD401AA1F1E60E300D3585D /* AppDelegate.swift */,
-				ECD401AC1F1E60E300D3585D /* ViewController.swift */,
-				ECD401AE1F1E60E300D3585D /* Main.storyboard */,
-				ECD401B41F1E60E300D3585D /* Assets.xcassets */,
-				ECD401B61F1E60E300D3585D /* LaunchScreen.storyboard */,
-				ECD401B91F1E60E300D3585D /* Info.plist */,
-				ECD401B11F1E60E300D3585D /* StoryBook.xcdatamodeld */,
+				ECD401DE1F1E783D00D3585D /* ModelControllers */,
+				ECD401DD1F1E782E00D3585D /* ViewControllers */,
+				ECD401DF1F1E826E00D3585D /* Model */,
+				ECD401DC1F1E748200D3585D /* Storyboards */,
+				ECD401DB1F1E747B00D3585D /* Resources */,
 			);
 			path = StoryBook;
 			sourceTree = "<group>";
@@ -126,6 +122,48 @@
 				ECD401CF1F1E60E300D3585D /* Info.plist */,
 			);
 			path = StoryBookUITests;
+			sourceTree = "<group>";
+		};
+		ECD401DB1F1E747B00D3585D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ECD401AA1F1E60E300D3585D /* AppDelegate.swift */,
+				ECD401B41F1E60E300D3585D /* Assets.xcassets */,
+				ECD401B91F1E60E300D3585D /* Info.plist */,
+				ECD401B11F1E60E300D3585D /* StoryBook.xcdatamodeld */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		ECD401DC1F1E748200D3585D /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				ECD401AE1F1E60E300D3585D /* Main.storyboard */,
+				ECD401B61F1E60E300D3585D /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		ECD401DD1F1E782E00D3585D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		ECD401DE1F1E783D00D3585D /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ModelControllers;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		ECD401DF1F1E826E00D3585D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,7 +303,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECD401AD1F1E60E300D3585D /* ViewController.swift in Sources */,
 				ECD401B31F1E60E300D3585D /* StoryBook.xcdatamodeld in Sources */,
 				ECD401AB1F1E60E300D3585D /* AppDelegate.swift in Sources */,
 			);
@@ -520,6 +557,7 @@
 				ECD401D41F1E60E300D3585D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ECD401D51F1E60E300D3585D /* Build configuration list for PBXNativeTarget "StoryBookTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +566,7 @@
 				ECD401D71F1E60E300D3585D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ECD401D81F1E60E300D3585D /* Build configuration list for PBXNativeTarget "StoryBookUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +575,7 @@
 				ECD401DA1F1E60E300D3585D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
