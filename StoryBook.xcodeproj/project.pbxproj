@@ -14,6 +14,14 @@
 		ECD401B81F1E60E300D3585D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECD401B61F1E60E300D3585D /* LaunchScreen.storyboard */; };
 		ECD401C31F1E60E300D3585D /* StoryBookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD401C21F1E60E300D3585D /* StoryBookTests.swift */; };
 		ECD401CE1F1E60E300D3585D /* StoryBookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD401CD1F1E60E300D3585D /* StoryBookUITests.swift */; };
+		ECD401E11F1E853A00D3585D /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD401E01F1E853A00D3585D /* CoreDataStack.swift */; };
+		ECD401E31F1E859C00D3585D /* Book+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD401E21F1E859C00D3585D /* Book+Convenience.swift */; };
+		ECD401E51F1E86BB00D3585D /* Page+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD401E41F1E86BB00D3585D /* Page+Convenience.swift */; };
+		ECD401E71F1E89DD00D3585D /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD401E61F1E89DD00D3585D /* WelcomeViewController.swift */; };
+		ECD401EA1F1E8A1000D3585D /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD401E91F1E8A1000D3585D /* Keys.swift */; };
+		ECD401EC1F1E9BD600D3585D /* LoadBookTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD401EB1F1E9BD600D3585D /* LoadBookTableViewController.swift */; };
+		ECD401EE1F1EB8BE00D3585D /* BookController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD401ED1F1EB8BE00D3585D /* BookController.swift */; };
+		ECD401F01F1EB93800D3585D /* PageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD401EF1F1EB93800D3585D /* PageController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +55,14 @@
 		ECD401C91F1E60E300D3585D /* StoryBookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StoryBookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECD401CD1F1E60E300D3585D /* StoryBookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBookUITests.swift; sourceTree = "<group>"; };
 		ECD401CF1F1E60E300D3585D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECD401E01F1E853A00D3585D /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		ECD401E21F1E859C00D3585D /* Book+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Book+Convenience.swift"; sourceTree = "<group>"; };
+		ECD401E41F1E86BB00D3585D /* Page+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Page+Convenience.swift"; sourceTree = "<group>"; };
+		ECD401E61F1E89DD00D3585D /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		ECD401E91F1E8A1000D3585D /* Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
+		ECD401EB1F1E9BD600D3585D /* LoadBookTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadBookTableViewController.swift; sourceTree = "<group>"; };
+		ECD401ED1F1EB8BE00D3585D /* BookController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookController.swift; sourceTree = "<group>"; };
+		ECD401EF1F1EB93800D3585D /* PageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +113,7 @@
 		ECD401A91F1E60E300D3585D /* StoryBook */ = {
 			isa = PBXGroup;
 			children = (
+				ECD401E81F1E8A0500D3585D /* Helper */,
 				ECD401DE1F1E783D00D3585D /* ModelControllers */,
 				ECD401DD1F1E782E00D3585D /* ViewControllers */,
 				ECD401DF1F1E826E00D3585D /* Model */,
@@ -130,7 +147,6 @@
 				ECD401AA1F1E60E300D3585D /* AppDelegate.swift */,
 				ECD401B41F1E60E300D3585D /* Assets.xcassets */,
 				ECD401B91F1E60E300D3585D /* Info.plist */,
-				ECD401B11F1E60E300D3585D /* StoryBook.xcdatamodeld */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -147,6 +163,8 @@
 		ECD401DD1F1E782E00D3585D /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				ECD401E61F1E89DD00D3585D /* WelcomeViewController.swift */,
+				ECD401EB1F1E9BD600D3585D /* LoadBookTableViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -154,6 +172,8 @@
 		ECD401DE1F1E783D00D3585D /* ModelControllers */ = {
 			isa = PBXGroup;
 			children = (
+				ECD401ED1F1EB8BE00D3585D /* BookController.swift */,
+				ECD401EF1F1EB93800D3585D /* PageController.swift */,
 			);
 			name = ModelControllers;
 			path = ..;
@@ -162,8 +182,20 @@
 		ECD401DF1F1E826E00D3585D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				ECD401B11F1E60E300D3585D /* StoryBook.xcdatamodeld */,
+				ECD401E01F1E853A00D3585D /* CoreDataStack.swift */,
+				ECD401E21F1E859C00D3585D /* Book+Convenience.swift */,
+				ECD401E41F1E86BB00D3585D /* Page+Convenience.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		ECD401E81F1E8A0500D3585D /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				ECD401E91F1E8A1000D3585D /* Keys.swift */,
+			);
+			name = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,8 +335,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECD401EE1F1EB8BE00D3585D /* BookController.swift in Sources */,
+				ECD401E31F1E859C00D3585D /* Book+Convenience.swift in Sources */,
+				ECD401E11F1E853A00D3585D /* CoreDataStack.swift in Sources */,
+				ECD401EC1F1E9BD600D3585D /* LoadBookTableViewController.swift in Sources */,
+				ECD401F01F1EB93800D3585D /* PageController.swift in Sources */,
 				ECD401B31F1E60E300D3585D /* StoryBook.xcdatamodeld in Sources */,
+				ECD401E71F1E89DD00D3585D /* WelcomeViewController.swift in Sources */,
+				ECD401EA1F1E8A1000D3585D /* Keys.swift in Sources */,
 				ECD401AB1F1E60E300D3585D /* AppDelegate.swift in Sources */,
+				ECD401E51F1E86BB00D3585D /* Page+Convenience.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

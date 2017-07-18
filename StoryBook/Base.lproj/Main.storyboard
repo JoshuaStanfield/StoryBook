@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Welcome View Controller-->
         <scene sceneID="0t8-eS-3t8">
             <objects>
-                <viewController id="tDN-vv-ccZ" sceneMemberID="viewController">
+                <viewController id="tDN-vv-ccZ" customClass="WelcomeViewController" customModule="StoryBook" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gKP-cM-w0O"/>
                         <viewControllerLayoutGuide type="bottom" id="vaI-ef-MEs"/>
@@ -33,7 +33,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Load Story"/>
                                 <connections>
-                                    <segue destination="jbn-NE-5Pv" kind="show" id="A8a-Is-z4H"/>
+                                    <segue destination="jbn-NE-5Pv" kind="show" identifier="toLoadBooksTableVC" id="A8a-Is-z4H"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KdK-YD-K0A">
@@ -41,7 +41,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Create Story"/>
                                 <connections>
-                                    <segue destination="bSx-64-233" kind="show" id="7Kl-6p-WUQ"/>
+                                    <segue destination="bSx-64-233" kind="show" identifier="toCreateStory" id="7Kl-6p-WUQ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -53,16 +53,16 @@
             </objects>
             <point key="canvasLocation" x="1012.5" y="132.5"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Load Book Table View Controller-->
         <scene sceneID="tHa-db-Yy0">
             <objects>
-                <tableViewController id="jbn-NE-5Pv" sceneMemberID="viewController">
+                <tableViewController id="jbn-NE-5Pv" customClass="LoadBookTableViewController" customModule="StoryBook" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="e1s-6W-Bt0">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="NUm-2g-9ov" style="IBUITableViewCellStyleDefault" id="gRA-In-aUH">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LoadBookCell" textLabel="NUm-2g-9ov" style="IBUITableViewCellStyleDefault" id="gRA-In-aUH">
                                 <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gRA-In-aUH" id="0yW-dT-FEo">
@@ -88,7 +88,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nyD-5b-pz9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1774" y="575"/>
+            <point key="canvasLocation" x="1830" y="570"/>
         </scene>
         <!--Page View Controller-->
         <scene sceneID="dXk-lT-T2M">
@@ -100,7 +100,7 @@
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xj6-Pb-3lp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1774" y="-276"/>
+            <point key="canvasLocation" x="1830" y="-276"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="kaU-bJ-dfk">
@@ -114,12 +114,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3BD-WJ-LWJ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3BD-WJ-LWJ">
                                 <rect key="frame" x="16" y="72" width="288" height="164"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Rhu-2Y-aT7">
-                                <rect key="frame" x="16" y="255" width="281" height="205"/>
+                                <rect key="frame" x="16" y="255" width="288" height="205"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -129,10 +129,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="vRy-hX-jk8">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="jZh-CZ-yZI"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yQE-Ct-gK3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2591.25" y="-280"/>
+            <point key="canvasLocation" x="2653" y="-276"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lOl-hy-dnY">
